@@ -1,0 +1,43 @@
+[03-Jul-2025 04:46:38 UTC] PHP Warning:  Unsupported declare 'strict_types' in /home/peradi/public_html/lawasia-conference-dummy/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php on line 1
+[03-Jul-2025 04:46:38 UTC] PHP Fatal error:  Default value for parameters with a class type hint can only be NULL in /home/peradi/public_html/lawasia-conference-dummy/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php on line 91
+[04-Jul-2025 07:44:02 UTC] PHP Warning:  require_once(class-smtp.php): failed to open stream: No such file or directory in /home/peradi/public_html/lawasia-conference-dummy/class.phpmailer.php on line 1520
+[04-Jul-2025 07:44:02 UTC] PHP Fatal error:  require_once(): Failed opening required 'class-smtp.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/peradi/public_html/lawasia-conference-dummy/class.phpmailer.php on line 1520
+[04-Jul-2025 07:48:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method SMTP::setTimeout() in /home/peradi/public_html/lawasia-conference-dummy/class.phpmailer.php:1617
+Stack trace:
+#0 /home/peradi/public_html/lawasia-conference-dummy/class.phpmailer.php(1541): PHPMailer->smtpConnect(Array)
+#1 /home/peradi/public_html/lawasia-conference-dummy/class.phpmailer.php(1335): PHPMailer->smtpSend('Date: Fri, 4 Ju...', 'This is a multi...')
+#2 /home/peradi/public_html/lawasia-conference-dummy/class.phpmailer.php(1213): PHPMailer->postSend()
+#3 /home/peradi/public_html/lawasia-conference-dummy/emailkirim.php(24): PHPMailer->send()
+#4 {main}
+  thrown in /home/peradi/public_html/lawasia-conference-dummy/class.phpmailer.php on line 1617
+[04-Jul-2025 11:44:04 UTC] PHP Warning:  include(class.phpmailer.php): failed to open stream: No such file or directory in /home/peradi/public_html/lawasia-conference-dummy/emailkirim.php on line 2
+[04-Jul-2025 11:44:04 UTC] PHP Warning:  include(class.phpmailer.php): failed to open stream: No such file or directory in /home/peradi/public_html/lawasia-conference-dummy/emailkirim.php on line 2
+[04-Jul-2025 11:44:04 UTC] PHP Warning:  include(): Failed opening 'class.phpmailer.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/peradi/public_html/lawasia-conference-dummy/emailkirim.php on line 2
+[04-Jul-2025 11:44:04 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPMailer' not found in /home/peradi/public_html/lawasia-conference-dummy/emailkirim.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/peradi/public_html/lawasia-conference-dummy/emailkirim.php on line 3
+[04-Jul-2025 11:44:22 UTC] PHP Warning:  include(class.phpmailer.php): failed to open stream: No such file or directory in /home/peradi/public_html/lawasia-conference-dummy/emailkirim.php on line 2
+[04-Jul-2025 11:44:22 UTC] PHP Warning:  include(class.phpmailer.php): failed to open stream: No such file or directory in /home/peradi/public_html/lawasia-conference-dummy/emailkirim.php on line 2
+[04-Jul-2025 11:44:22 UTC] PHP Warning:  include(): Failed opening 'class.phpmailer.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/peradi/public_html/lawasia-conference-dummy/emailkirim.php on line 2
+[04-Jul-2025 11:44:22 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPMailer' not found in /home/peradi/public_html/lawasia-conference-dummy/emailkirim.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/peradi/public_html/lawasia-conference-dummy/emailkirim.php on line 3
+[05-Jul-2025 04:02:25 UTC] PHP Fatal error:  Cannot redeclare Regist::send_email() in /home/peradi/public_html/lawasia-conference-dummy/application/controllers/Regist.php on line 351
+[07-Jul-2025 06:57:25 UTC] PHP Fatal error:  Cannot redeclare Registration_model::update_payment_status() in /home/peradi/public_html/lawasia-conference/application/models/Registration_model.php on line 40
+[07-Jul-2025 06:57:55 UTC] PHP Fatal error:  Cannot redeclare Registration_model::update_payment_status() in /home/peradi/public_html/lawasia-conference/application/models/Registration_model.php on line 40
+[07-Jul-2025 06:58:25 UTC] PHP Fatal error:  Cannot redeclare Registration_model::update_payment_status() in /home/peradi/public_html/lawasia-conference/application/models/Registration_model.php on line 40
+[07-Jul-2025 06:58:55 UTC] PHP Fatal error:  Cannot redeclare Registration_model::update_payment_status() in /home/peradi/public_html/lawasia-conference/application/models/Registration_model.php on line 40
+[07-Jul-2025 06:59:25 UTC] PHP Fatal error:  Cannot redeclare Registration_model::update_payment_status() in /home/peradi/public_html/lawasia-conference/application/models/Registration_model.php on line 40
+[07-Jul-2025 06:59:55 UTC] PHP Fatal error:  Cannot redeclare Registration_model::update_payment_status() in /home/peradi/public_html/lawasia-conference/application/models/Registration_model.php on line 40
+[07-Jul-2025 07:00:25 UTC] PHP Fatal error:  Cannot redeclare Registration_model::update_payment_status() in /home/peradi/public_html/lawasia-conference/application/models/Registration_model.php on line 40
+[07-Jul-2025 07:00:55 UTC] PHP Fatal error:  Cannot redeclare Registration_model::update_payment_status() in /home/peradi/public_html/lawasia-conference/application/models/Registration_model.php on line 40
+[07-Jul-2025 07:01:25 UTC] PHP Fatal error:  Cannot redeclare Registration_model::update_payment_status() in /home/peradi/public_html/lawasia-conference/application/models/Registration_model.php on line 40
+[07-Jul-2025 07:01:55 UTC] PHP Fatal error:  Cannot redeclare Registration_model::update_payment_status() in /home/peradi/public_html/lawasia-conference/application/models/Registration_model.php on line 40
+[07-Jul-2025 07:02:25 UTC] PHP Fatal error:  Cannot redeclare Registration_model::update_payment_status() in /home/peradi/public_html/lawasia-conference/application/models/Registration_model.php on line 40
+[07-Jul-2025 07:02:55 UTC] PHP Fatal error:  Cannot redeclare Registration_model::update_payment_status() in /home/peradi/public_html/lawasia-conference/application/models/Registration_model.php on line 40
+[07-Jul-2025 07:03:25 UTC] PHP Fatal error:  Cannot redeclare Registration_model::update_payment_status() in /home/peradi/public_html/lawasia-conference/application/models/Registration_model.php on line 40
+[07-Jul-2025 07:03:55 UTC] PHP Fatal error:  Cannot redeclare Registration_model::update_payment_status() in /home/peradi/public_html/lawasia-conference/application/models/Registration_model.php on line 40
+[07-Jul-2025 07:04:12 UTC] PHP Fatal error:  Cannot redeclare Registration_model::update_payment_status() in /home/peradi/public_html/lawasia-conference/application/models/Registration_model.php on line 40
+[07-Jul-2025 07:04:52 UTC] PHP Fatal error:  Cannot redeclare Registration_model::update_payment_status() in /home/peradi/public_html/lawasia-conference/application/models/Registration_model.php on line 40
