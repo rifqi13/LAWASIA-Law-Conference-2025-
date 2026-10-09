@@ -1,71 +1,69 @@
-###################
-What is CodeIgniter
-###################
+###################################################################
+LAWASIA Belt and Road Initiative & Employment Law Conference 2025
+###################################################################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Sistem informasi dan portal pendaftaran konferensi internasional **LAWASIA Belt and Road Initiative & Employment Law Conference 2025** yang diselenggarakan oleh PERADI bersama organisasi hukum LAWASIA.
+
+Aplikasi web ini digunakan untuk mengelola pendaftaran peserta/delegasi, penyampaian jadwal acara, materi konferensi, konfirmasi email otomatis, serta informasi pendukung lainnya.
+
+Sistem dikembangkan menggunakan framework **CodeIgniter 3**, antarmuka **Bootstrap**, dan database **MySQL**.
 
 *******************
-Release Information
+Informasi Konferensi
 *******************
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
-
-**************************
-Changelog and New Features
-**************************
-
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+- **Nama Acara**: LAWASIA Belt and Road Initiative & Employment Law Conference 2025
+- **Penyelenggara**: PERADI (Perhimpunan Advokat Indonesia) & LAWASIA
+- **Tanggal**: 2025
+- **Lokasi**: Indonesia
 
 *******************
-Server Requirements
+Fitur Utama Portal
 *******************
 
-PHP version 5.6 or newer is recommended.
+1. **Beranda & Landing Page**: Tampilan informasi umum konferensi, tema pembahasan, dan daftar pembicara internasional.
+2. **Sistem Pendaftaran Peserta**: Formulir pendaftaran delegasi dengan pengisian data personal, instansi/organisasi, dan opsi keikutsertaan.
+3. **Pengiriman Email Konfirmasi Otomatis**: Integrasi SMTP PHPMailer untuk pengiriman email konfirmasi pendaftaran secara otomatis kepada peserta.
+4. **Materi & Program Konferensi**: Jadwal sesi diskusi, topik pembahasan *Belt & Road Initiative*, serta materi *Employment Law*.
+5. **Panel Admin & Manajemen Peserta**:
+   - Pengelolaan data registrasi delegasi.
+   - Verifikasi status pendaftaran dan pembayaran.
+   - Ekspor rekap data peserta ke format Excel/PDF.
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+*******************
+Teknologi yang Digunakan
+*******************
+
+- **Framework**: CodeIgniter 3 (PHP)
+- **Frontend**: Bootstrap 4 / 5, HTML5, CSS3, JavaScript / jQuery
+- **Database**: MySQL / MariaDB
+- **Library Tambahan**: PHPMailer (SMTP Email Handler), TCPDF / FPDF
+
+*******************
+Persyaratan Server
+*******************
+
+- Web Server: Apache (dengan modul ``mod_rewrite`` aktif)
+- PHP: Version 7.2 / 7.4 / 8.0
+- Database: MySQL 5.7+ / MariaDB
+- Ekstensi PHP Wajib: ``mysqli``, ``curl``, ``json``, ``mbstring``, ``gd``, ``openssl``
 
 ************
-Installation
+Cara Instalasi
 ************
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+1. Kloning repositori ini ke direktori web server lokal (misal: ``C:/xampp/htdocs/lawasia2025``):
+   .. code-block:: bash
+
+      git clone https://github.com/rifqi13/LAWASIA-Law-Conference-2025-.git
+
+2. Buat database baru di MySQL (contoh: ``lawasia_2025_db``) dan import skema database (file ``.sql``).
+3. Konfigurasikan koneksi database pada berkas ``application/config/database.php``.
+4. Atur ``base_url`` dan pengaturan SMTP email pada berkas ``application/config/config.php`` atau file konfigurasi terkait.
+5. Buka peramban (browser) Anda dan akses URL projek.
 
 *******
-License
+Lisensi
 *******
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+Hak Cipta (c) 2025 PERADI & LAWASIA. All Rights Reserved.
